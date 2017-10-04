@@ -1,5 +1,5 @@
 FROM alpine
 
-COPY script.sh /Hello_Daniel!.sh
+COPY script.sh /script.sh
 
-CMD ["/Hello_Daniel!.sh"]
+CMD ["/script.sh"]
