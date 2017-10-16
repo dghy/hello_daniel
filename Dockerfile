@@ -1,3 +1,3 @@
-FROM scratch
-COPY hello /
-CMD ["/hello"]
+FROM microsoft/nanoserver
+COPY hello.txt C:
+CMD ["cmd", "/C", "type C:\\hello.txt"]
