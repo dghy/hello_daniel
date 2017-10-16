@@ -1,3 +1,3 @@
-FROM microsoft/nanoserver
-COPY hello.txt C:
-CMD ["cmd", "/C", "type C:\\hello.txt"]
+FROM alpine
+COPY script.sh /script.sh
+CMD ["/script.sh"]
