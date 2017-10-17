@@ -39,9 +39,9 @@ class HandlerClass(SimpleHTTPRequestHandler):
             del request[addr_pair]
             request[addr_pair]=[num,ts]
         file=open("index.html", "w")
-        file.write("<!DOCTYPE html> <html> <body><center><h1><font color=\"blue\" face=\"Georgia, Arial\" size=8><em>Hello Daniel! It took you a while did't it?</em></font> Good Job!</h1></center>");
+        file.write("<!DOCTYPE html> <html> <body><center><h1><font color=\"blue\" face=\"Georgia, Arial\" size=8><em>Hello Daniel! It took you a while did't it?</em></font> Good Job!</h1></center>")
 
-        file.write("</body> </html>");
+        file.write("</body> </html>")
         file.close()
         pickle.dump(request,open("pickle_data.txt","w"))
 
