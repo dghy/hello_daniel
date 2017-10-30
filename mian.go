@@ -235,9 +235,9 @@ func main() {
 
 
 	// delete session
-	//driver.DeleteSession()
+	driver.DeleteSession()
 
-	//fmt.Println("Sessions deleted!")
+	fmt.Println("Sessions deleted!")
 
 
 }
